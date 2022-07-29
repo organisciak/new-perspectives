@@ -1,7 +1,7 @@
 const h = [
-  "/new-perspectives/internal/immutable/start-8a5037c5.js",
+  "/new-perspectives/internal/immutable/start-00ab5856.js",
   "/new-perspectives/internal/immutable/pages/__layout.svelte-ffd85efb.js",
-  "/new-perspectives/internal/immutable/assets/__layout-fae78467.css",
+  "/new-perspectives/internal/immutable/assets/__layout-d25969e8.css",
   "/new-perspectives/internal/immutable/assets/Header-1ef2fb5e.css",
   "/new-perspectives/internal/immutable/error.svelte-2c12e5aa.js",
   "/new-perspectives/internal/immutable/pages/about.svelte-ca6346d0.js",
@@ -25,15 +25,15 @@ const h = [
   "/new-perspectives/robots.txt",
   "/new-perspectives/safari-pinned-tab.svg",
   "/new-perspectives/site.webmanifest"
-], i = "1659138091213", n = self, r = `cache${i}`, p = `offline${i}`, w = ["/"], f = [
+], i = "1659138306004", n = self, r = `cache${i}`, p = `offline${i}`, w = ["/"], u = [
   "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap",
   "https://unpkg.com/ress/dist/ress.min.css",
   "https://fonts.gstatic.com/s/inter/v11/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2"
-], u = (e) => e.map((s) => self.location.origin + s), d = u([
+], f = (e) => e.map((s) => self.location.origin + s), d = f([
   ...m.filter((e) => !/\/icons\/(apple.*?|original.png)/.test(e)),
   ...h,
   ...w
-]), o = [...d, ...f], v = new Set(o);
+]), o = [...d, ...u], v = new Set(o);
 n.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(r).then((s) => s.addAll(o)).then(() => {
