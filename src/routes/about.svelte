@@ -1,5 +1,7 @@
 <script context="module">
 	import { browser, dev } from '$app/env';
+import Header from '$lib/header/Header.svelte';
+import { listen, not_equal } from 'svelte/internal';
 
 	// we don't need any JS on this page, though we'll load
 	// it in dev so that we get hot module replacement...
@@ -22,7 +24,21 @@
 <div class="content">
 	<h1>New Perspectives</h1>
 
-	<p>New Perspectives is A Deck of Strategies for Exploring the World Around You. It was written in collaboration with GPT-3.</p>
+	<p>New Perspectives is a Deck of Strategies for Exploring the World Around You.</p>
+	<p>
+		It was written in collaboration with GPT-3, a large language model.
+	<a href="https://arxiv.org/abs/2005.14165">Language models are few-shot learners</a>, which
+	refers to their ability to pick up a task with a few examples. While 'task' often refers a 
+	common natural language processing challenge, it also means that it can continue <em>anything</em>
+	that you've started. Here, I gave it a personal list of strategies to break out of routine,
+	and it suggested more tips in line with mine - some of which were adopted, adapted, and used for more
+	suggestions.</p>
+
+	<p>The favicon is a lightly-edited generation from <a href="https://openai.com/dall-e-2/">DALL-E 2</a>,
+		because why not?</p>
+
+	<p><img src="logo.png" style="width:100%" alt="A round logo of a rainbow in front of a sun." /></p>
+
 </div>
 
 <style>
