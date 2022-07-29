@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "npm run dev"
+            "program": "npm run dev -- --open"
         }
     ]
 }

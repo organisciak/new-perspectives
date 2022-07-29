@@ -1,12 +1,9 @@
-@import '@fontsource/fira-mono';
-
 :root {
-	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
+	--font-family: 'HK Grotesk', Arial, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
-	--secondary-color: #d0dde9;
+	--primary-color: #FFFF00;
+	--color-bg: #69F7BE;
+	--secondary-color: #00FFFF;
 	--tertiary-color: #edf0f8;
 	--accent-color: #ff3e00;
 	--heading-color: rgba(0, 0, 0, 0.7);
@@ -16,16 +13,23 @@
 	--column-margin-top: 4rem;
 }
 
+@font-face {
+	font-family: HK Grotesk;
+	src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+	  format("opentype");
+  }
+  @font-face {
+	font-family: HK Grotesk;
+	font-weight: bold;
+	src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+	  format("opentype");
+  }
+
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-color: var(--primary-color);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);
+	background-color: var(--color-bg);
+	font-family: var(--font-family);
 }
 
 body::before {
