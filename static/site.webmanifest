@@ -1,6 +1,7 @@
 {
-    "name": "Perspectives",
+    "name": "New Perspectives",
     "short_name": "Perspectives",
+    "description": "Deck of Strategies for Exploring the World Around You.",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +14,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    "start_url": "index.html",
+    "display": "standalone",
+    "theme_color": "#FFFF00",
+    "background_color": "#69F7BE"
 }
