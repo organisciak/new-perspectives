@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/hk-groteks');
+
 :root {
 	--font-family: 'HK Grotesk', Arial, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--pure-white: #ffffff;
@@ -12,18 +14,6 @@
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 }
-
-@font-face {
-	font-family: HK Grotesk;
-	src: url("http://fonts.cdnfonts.com/css/hk-groteks")
-	  format("opentype");
-  }
-  @font-face {
-	font-family: HK Grotesk;
-	font-weight: bold;
-	src: url("hhttp://fonts.cdnfonts.com/css/hk-groteks")
-	  format("opentype");
-  }
 
 body {
 	min-height: 100vh;
