@@ -1,5 +1,5 @@
 const h = [
-  "/new-perspectives/internal/immutable/start-00ab5856.js",
+  "/new-perspectives/internal/immutable/start-1c5f23a3.js",
   "/new-perspectives/internal/immutable/pages/__layout.svelte-ffd85efb.js",
   "/new-perspectives/internal/immutable/assets/__layout-d25969e8.css",
   "/new-perspectives/internal/immutable/assets/Header-1ef2fb5e.css",
@@ -25,18 +25,17 @@ const h = [
   "/new-perspectives/robots.txt",
   "/new-perspectives/safari-pinned-tab.svg",
   "/new-perspectives/site.webmanifest"
-], i = "1659138306004", n = self, r = `cache${i}`, p = `offline${i}`, w = ["/"], u = [
-  "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap",
-  "https://unpkg.com/ress/dist/ress.min.css",
-  "https://fonts.gstatic.com/s/inter/v11/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2"
-], f = (e) => e.map((s) => self.location.origin + s), d = f([
+], i = "1659139211747", n = self, r = `cache${i}`, o = `offline${i}`, d = ["/"], u = [
+  "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css",
+  "https://fonts.cdnfonts.com/css/hk-groteks"
+], f = (e) => e.map((s) => self.location.origin + s), w = f([
   ...m.filter((e) => !/\/icons\/(apple.*?|original.png)/.test(e)),
   ...h,
-  ...w
-]), o = [...d, ...u], v = new Set(o);
+  ...d
+]), p = [...w, ...u], v = new Set(p);
 n.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(r).then((s) => s.addAll(o)).then(() => {
+    caches.open(r).then((s) => s.addAll(p)).then(() => {
       n.skipWaiting();
     })
   );
@@ -45,13 +44,13 @@ n.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then(async (s) => {
       for (const t of s)
-        t !== r && t !== p && await caches.delete(t);
+        t !== r && t !== o && await caches.delete(t);
       n.clients.claim();
     })
   );
 });
 async function b(e) {
-  const s = await caches.open(p);
+  const s = await caches.open(o);
   try {
     const t = await fetch(e);
     return s.put(e, t.clone()), t;

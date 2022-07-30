@@ -20,8 +20,8 @@
             "type": "image/png"
         }
     ],
-    "start_url": "",
-    "id": "/new-perspectives/site.webmanifest",
+    "start_url": "/new-perspectives/",
+    "id": "/new-perspectives/",
     "display": "standalone",
     "theme_color": "#FFFF00",
     "background_color": "#69F7BE"
