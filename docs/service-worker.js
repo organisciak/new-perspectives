@@ -1,5 +1,5 @@
 const h = [
-  "/new-perspectives/internal/immutable/start-1c5f23a3.js",
+  "/new-perspectives/internal/immutable/start-0083580b.js",
   "/new-perspectives/internal/immutable/pages/__layout.svelte-ffd85efb.js",
   "/new-perspectives/internal/immutable/assets/__layout-d25969e8.css",
   "/new-perspectives/internal/immutable/assets/Header-1ef2fb5e.css",
@@ -25,14 +25,14 @@ const h = [
   "/new-perspectives/robots.txt",
   "/new-perspectives/safari-pinned-tab.svg",
   "/new-perspectives/site.webmanifest"
-], i = "1659139211747", n = self, r = `cache${i}`, o = `offline${i}`, d = ["/"], u = [
+], i = "1659139465460", n = self, r = `cache${i}`, o = `offline${i}`, d = ["/"], u = [
   "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css",
   "https://fonts.cdnfonts.com/css/hk-groteks"
-], f = (e) => e.map((s) => self.location.origin + s), w = f([
+], w = (e) => e.map((s) => self.location.origin + s), f = w([
   ...m.filter((e) => !/\/icons\/(apple.*?|original.png)/.test(e)),
   ...h,
   ...d
-]), p = [...w, ...u], v = new Set(p);
+]), p = [...f, ...u], v = new Set(p);
 n.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(r).then((s) => s.addAll(p)).then(() => {
